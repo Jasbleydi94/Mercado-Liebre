@@ -4,14 +4,14 @@
     padding: 10px;
     border-radius: 5px;
     background: white;
-    width: 60%;
-    margin: 10px;
+    width: 50%;
+    margin: 1rem 2rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 20px 50px 50px;
+    padding: 2rem 1rem;
 }
 
 ul {
@@ -20,6 +20,7 @@ ul {
 }
 
 .logo {
+    width: 30%;
     margin-left: 50px;
     display: flex;
 }
@@ -40,7 +41,7 @@ ul {
 }
 
 #purchaseTitle {
-    margin-right: 55px;
+    width: 30%;
 }
 
 li a {

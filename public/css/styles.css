@@ -16,10 +16,11 @@ input {
 }
 
 input[type='checkbox'],
-input[type='radio']{
+input[type='radio'] {
   width: 20%;
 }
-input[type='file']{
+
+input[type='file'] {
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +35,7 @@ input[type='file']{
   border: solid #1259c3;
 }
 
-.btn-secondary{
+.btn-secondary {
   background: #c31233;
   border: solid #c31233;
 }
@@ -48,8 +49,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-right: 40px;
-  padding-top: 30px;
+  padding-top: 1rem;
   width: 100%;
 }
 
@@ -71,16 +71,21 @@ body {
   margin-right: 4rem;
 }
 
-@media screen and (min-width: 999px){
-.productArticleImage:hover .descriptionProduct, .productArticleWrapper:hover .descriptionProduct{
-    display:block
-}
-.productArticleWrapper:hover{
+@media screen and (min-width: 999px) {
+
+  .productArticleImage:hover .descriptionProduct,
+  .productArticleWrapper:hover .descriptionProduct {
+    visibility: inherit;
+  }
+
+  .productArticleWrapper:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-i :hover{
+  }
+
+  .productArticleWrapper:hover i.fas.fa-truck.truckIcon {
     transform: rotate(-90deg);
-}
+    transition: 1.5s;
+  }
 }
 
 .productArticleImage {
@@ -114,9 +119,9 @@ i :hover{
   right: 10px;
 }
 
-.descriptionProduct{
-    padding: 1rem;
-    display: none;
+.descriptionProduct {
+  padding: 1rem;
+  visibility: hidden;
 }
 
 .offer {
