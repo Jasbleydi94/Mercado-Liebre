@@ -7,7 +7,7 @@ const publicFolderPath = path.resolve(__dirname, './public');
 
 app.use( express.static(publicFolderPath));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, ()=>(console.log("Servidor escuchando en el puerto", port)));
 
