@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  background: white;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 12px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  width: 100%;
+}
+
+input[type='checkbox'],
+input[type='radio']{
+  width: 20%;
+}
+input[type='file']{
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.btn {
+  border-radius: 6px;
+  font-size: 20px;
+  color: white;
+  background: #1259c3;
+  border: solid #1259c3;
+}
+
+.btn-secondary{
+  background: #c31233;
+  border: solid #c31233;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.searchWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+#main {
+  background-color: #ebebeb;
+}
+
+.productSection {
+  padding: 2rem 3rem;
+}
+
+.productArticleWrapper {
+  background-color: white;
+  width: 25%;
+  margin-right: 4rem;
+}
+
+@media screen and (min-width: 999px){
+.productArticleImage:hover .descriptionProduct, .productArticleWrapper:hover .descriptionProduct{
+    display:block
+}
+.productArticleWrapper:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+i :hover{
+    transform: rotate(-90deg);
+}
+}
+
+.productArticleImage {
+  width: 100%;
+}
+
+.productArticlePrices {
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productSectionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.truckIcon {
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 30px;
+  background: white;
+  color: #39b54a;
+  right: 10px;
+}
+
+.descriptionProduct{
+    padding: 1rem;
+    display: none;
+}
+
+.offer {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 468px) and (max-width: 999px) {
+  .productSectionWrapper {
+    flex-wrap: wrap;
+  }
+
+  .productArticleWrapper {
+    width: 40%;
+    margin: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 468px) {
+
+  .productSectionWrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .productArticleImage {
+    width: 20rem;
+  }
+
+  .productArticleWrapper {
+    width: 20rem;
+    margin: 10px;
+  }
+}

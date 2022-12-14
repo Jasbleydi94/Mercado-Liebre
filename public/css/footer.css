@@ -1,0 +1,81 @@
+.footerWrapper {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 0px 8rem;
+}
+
+.footerTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footerInfo {
+    font-size: 14px;
+}
+
+.footerIcon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.copy {
+    margin: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #eac926;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.sectionFooter {
+    display: flex;
+}
+
+@media screen and (min-width: 468px) and (max-width: 999px) {
+
+    .sectionFooter {
+        flex-direction: column;
+    }
+
+    .footerWrapper {
+        padding: 0px 4rem;
+    }
+
+    .offer {
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .sectionFooter {
+        flex-direction: column;
+    }
+
+    .footerWrapper {
+        padding: 0px 4rem;
+    }
+
+    .offer {
+        margin-bottom: 0rem;
+    }
+}

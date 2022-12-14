@@ -1,0 +1,57 @@
+input[type='file'] {
+    margin-bottom: 2rem;
+}
+
+.registerInput {
+    width: auto;
+    margin: 1rem;
+    padding: 4px;
+    border-radius: 5px;
+    background: white;
+}
+
+.loginMain {
+    padding: 1rem 1rem;
+}
+
+.label {
+    width: 100%;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20%;
+}
+
+.submitButton {
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+    margin: 1rem;
+    padding: 6px;
+}
+
+.radioButton {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1rem;
+    display: flex
+}
+
+.checkboxLabel {
+    margin-bottom: 1rem;
+}
+
+.radioInput {
+    display: flex;
+    align-items: center;
+}
+
+.radioInput label {
+    margin-left: 1rem;
+}
